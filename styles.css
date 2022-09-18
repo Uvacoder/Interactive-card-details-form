@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    font-family: 'Space Grotesk', sans-serif;
+    
+}
+.card{
+    width: 30%;
+    height: 100vh;
+    background: url(./images/bg-main-desktop.png);
+}
+.form{
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thanks{
+    display: grid;
+    width: 350px;
+}
+.hide {
+    display: none;
+}
+
+.thanks h2{
+    padding-bottom: 1em;
+    text-transform: uppercase;
+}
+.thanks-text{
+    text-align: center;
+    margin-block:2em ;
+}
+.thanks img{
+    margin: auto;
+    width: 5em;
+}
+.card-back{
+    position: absolute;
+    top: 50vh;
+    left: 180px;
+    z-index: 1;
+    width: 445px;
+    height: 245px;
+    background: url(./images/bg-card-back.png);
+    text-transform: uppercase;
+}
+.card-front {
+    position: absolute;
+    top: 10vh;
+    left: 120px;
+    width: 445px;
+    height: 245px;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+    background: url("./images/bg-card-front.png");
+}
+svg{
+    margin: 30px;
+}
+.cvv{
+    position: absolute;
+    top: 105px;
+    right: 50px;
+    color: white;
+    font-size: 20px;
+}
+.card-info{
+    display: flex;
+    justify-content: space-between;
+    margin-block: 25px;
+    margin: auto;
+    font-size: 16px;
+    
+}
+
+.card-text{
+    margin: auto;
+    width: 85%;
+    margin-top: 4rem;
+    font-size: 23px;
+    
+}
+
+.card-number{
+    letter-spacing: 0.2em;
+    margin: auto;
+    
+    
+}
+input{
+    height: 40px;
+    border-radius:8px ;
+    margin-block: 20px;
+    font-size: 20px;
+    padding: 10px;
+    border:1px solid rgb(199, 198, 198);
+    
+}
+input:active,input:focus{
+    outline: none;
+    border: 2px solid hsl(249, 99%, 64%)
+}
+
+.exp input{
+    width: 80px; 
+}
+form{
+    display: grid;
+    text-transform: uppercase;
+    z-index: 2;
+    width: 350px;
+    
+}
+.last{
+    display: flex;
+    justify-content: space-between;
+}
+.cvc input{
+    width:150px ;
+    
+}
+
+#confirm,#continue{
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: hsl(278, 68%, 11%);
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: 'Space Grotesk', sans-serif;
+}
+@media screen and (max-width:1000px){
+    .wrapper{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .card{
+        width: 100%;
+        
+    height: 40vh;
+    }
+    .card-info{
+        font-size: 0.6em;
+    }
+  
+    .card-back,.card-front{
+        background-size: 320px;
+        object-fit: cover;
+        width: 320px;
+        height: 175px;
+    }
+    .card-back{
+        top: 5%;
+        left:15%;
+        z-index: 1;
+    }
+    .card-front{
+        z-index: 2;
+        top: 140px;
+        left: 5%;
+    }
+    
+     svg{
+        margin-bottom: 10px;
+        width: 100px;
+        height: 55px;
+       
+     }
+    .card-text{
+        width: 95%;
+        padding: 10px;
+        margin: auto;
+    }
+    .card-number{
+        letter-spacing: 0.02em;
+    }
+    .cvv{
+        top: 75px;
+        right: 35px;
+        font-size:12px ;
+    }
+    .form{
+        position: static;
+        width: 100%;
+
+    }
+   
+}
