@@ -157,7 +157,7 @@ form{
 }
 @media screen and (max-width:1024px){
     .wrapper{
-        position: static;
+        position: fixed;
         display: flex;
         flex-direction: column;
         
