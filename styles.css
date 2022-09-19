@@ -47,7 +47,7 @@
     width: 5em;
 }
 .card-back{
-    position: fixed;
+    position: absolute;
     top: 50vh;
     left: 5em;
     z-index: 1;
@@ -60,7 +60,7 @@
     text-transform: uppercase;
 }
 .card-front {
-    position: fixed;
+    position: absolute;
     top: 10vh;
     /* background-size: contain; */
     /* object-fit: cover; */
